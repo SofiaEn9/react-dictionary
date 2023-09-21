@@ -30,6 +30,7 @@
   color: #757575;
   border: 3px solid black;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .Dictionary .Dictionary-container .Dictionary-form .Dictionary-search-btn {
@@ -39,4 +40,5 @@
   font-size: 18px;
   margin-left: 12px;
   height: 50px;
+  text-transform: uppercase;
 }

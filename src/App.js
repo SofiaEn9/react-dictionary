@@ -1,4 +1,5 @@
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
@@ -6,6 +7,10 @@ function App() {
       <header className="App-header">
         <h1>Dictionary</h1>
       </header>
+      <main>
+        <Dictionary />
+      </main>
+      <footer>Open-source code by Sofía Enríquez</footer>
     </div>
   );
 }

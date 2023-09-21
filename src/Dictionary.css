@@ -1,0 +1,42 @@
+.Dictionary {
+  height: 100vh;
+  background-color: #fcdd9c;
+  border: 5px solid;
+}
+
+.Dictionary .Dictionary-container {
+  margin-left: 60px;
+}
+
+.Dictionary .Dictionary-container h1 {
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.Dictionary .Dictionary-container .Dictionary-form {
+  margin: 30px 0px 0px;
+}
+
+.Dictionary .Dictionary-container .Dictionary-form .Dictionary-search-bar {
+  background-color: #fff1e8;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  border: 3px solid;
+  height: 50px;
+}
+
+.Dictionary .Dictionary-container .Dictionary-form input[type="search"] {
+  padding-left: 20px;
+  color: #757575;
+  border: 3px solid black;
+  font-size: 18px;
+}
+
+.Dictionary .Dictionary-container .Dictionary-form .Dictionary-search-btn {
+  background-color: #f87850;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  border: 3px solid;
+  font-size: 18px;
+  margin-left: 12px;
+  height: 50px;
+}

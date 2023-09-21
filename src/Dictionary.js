@@ -14,16 +14,23 @@ export default function Dictionart() {
   }
   return (
     <div className="Dictionary">
-      <form onSubmit={search} className="Dictionary-form">
-        <input
-          type="search"
-          placeholder="Look up a word..."
-          onChange={handleKeywordChange}
-          className="Dictionary-search-bar"
-        />
-        <input type="submit" value="Search" className="Dictionary-search-btn" />
-      </form>
-      <p>Hello from Dictionary</p>
+      <div className="Dictionary-container">
+        <h1>Dictionary</h1>
+        <form onSubmit={search} className="Dictionary-form">
+          <input
+            type="search"
+            placeholder="Look up a word..."
+            onChange={handleKeywordChange}
+            className="col-7 Dictionary-search-bar"
+            autoFocus="off"
+          />
+          <input
+            type="submit"
+            value="Search"
+            className="col-3 Dictionary-search-btn"
+          />
+        </form>
+      </div>
     </div>
   );
 }

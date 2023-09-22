@@ -8,14 +8,20 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    setResults(response.data);
+    setResults(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
 
-    let apiKey = "de926abe0f35af91c8149b6305ofa34t";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    // SHECODES DICTIONARY API
+    // https://api.shecodes.io/dictionary/v1/define?word=cat&key=de926abe0f35af91c8149b6305ofa34t
+    // let apiKey = "de926abe0f35af91c8149b6305ofa34t";
+    // let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+
+    // GOOGLE DICTIONARY API
+    // https://api.dictionaryapi.dev/api/v2/entries/en/car
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

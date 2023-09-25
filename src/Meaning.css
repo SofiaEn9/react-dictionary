@@ -1,0 +1,21 @@
+.Meaning {
+  background-color: #fff1e8;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  border: 3px solid;
+  margin: 10px 60px 25px 0px;
+}
+
+.Meaning h4 {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-bottom: 5px;
+}
+
+.Meaning p {
+  font-size: 18px;
+  padding-left: 35px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import AudioPlayer from "react-h5-audio-player";
-import "./Audioplayer.css";
+import "./Phonetics.css";
 import speaker from "./media/speaker.png";
 
 export default function Phonetics(props) {

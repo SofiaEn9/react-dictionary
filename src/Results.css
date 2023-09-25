@@ -1,0 +1,26 @@
+.Results .keyword-container {
+  background-color: #fff1e8;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  border: 3px solid;
+  margin: 30px 60px 25px 0px;
+  padding-bottom: 15px;
+}
+
+.Results .keyword {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px 0px 0px 20px;
+}
+
+.Meaning h4 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-bottom: 5px;
+}
+
+.Meaning p {
+  font-size: 18px;
+}

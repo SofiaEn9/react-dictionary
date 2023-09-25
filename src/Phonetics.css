@@ -1,0 +1,33 @@
+.Phonetics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Phonetics .Phonetic-text {
+  font-size: 18px;
+  padding-left: 5px;
+  color: #757575;
+}
+
+.rhap_container {
+  padding: 10px 0px 10px 20px;
+  width: 120px;
+}
+
+.rhap_progress-section {
+  display: none;
+}
+
+.rhap_play-pause-button {
+  background-color: #f87850;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  border: 3px solid;
+  font-size: 18px;
+  margin-left: 0px;
+  padding: 3px 25px;
+}
+
+img {
+  width: 18px;
+}

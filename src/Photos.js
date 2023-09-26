@@ -40,6 +40,6 @@ export default function Photos(props) {
       </div>
     );
   } else {
-    return null;
+    return <div className="Photos-container Photos"> </div>;
   }
 }

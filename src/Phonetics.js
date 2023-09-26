@@ -9,7 +9,6 @@ export default function Phonetics(props) {
       {/*DOCUMENTATION https://www.npmjs.com/package/react-h5-audio-player#html-audio-tag-native-attributes */}
       <AudioPlayer
         src={props.phonetic.audio}
-        preload={false}
         autoPlay={false}
         autoPlayAfterSrcChange={false}
         showJumpControls={false}

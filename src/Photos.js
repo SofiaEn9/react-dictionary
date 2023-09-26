@@ -5,7 +5,7 @@ export default function Photos(props) {
   if (props.photos) {
     console.log(props.photos);
     return (
-      <section className="Photos">
+      <div className="Photos">
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
@@ -16,9 +16,28 @@ export default function Photos(props) {
               </div>
             );
           })}
-          <footer>Open-source code by Sofía Enríquez</footer>
         </div>
-      </section>
+        <div className="row">
+          <footer>
+            <a
+              href="https://github.com/SofiaEn9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-source code
+            </a>{" "}
+            by
+            <a
+              href="https://www.linkedin.com/in/sofia-enriquez-p/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Sofía Enríquez
+            </a>
+          </footer>
+        </div>
+      </div>
     );
   } else {
     return null;

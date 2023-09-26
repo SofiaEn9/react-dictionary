@@ -26,6 +26,12 @@
   font-size: 18px;
   margin-left: 0px;
   padding: 3px 25px;
+  transition: 500ms all ease-in-out;
+}
+
+.rhap_play-pause-button:hover {
+  background-color: #d2569e;
+  text-decoration: none;
 }
 
 img {

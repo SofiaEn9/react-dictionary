@@ -37,7 +37,7 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
   return (
-    <div className="row Dictionary">
+    <div className="row">
       <div className="col-sm-6 Dictionary-container">
         <h1>Dictionary</h1>
         <form
@@ -50,18 +50,18 @@ export default function Dictionary() {
             placeholder="Look up a word..."
             onChange={handleKeywordChange}
             autoFocus="off"
-            className="col-7 Dictionary-search-bar"
+            className="col-sm-7 Dictionary-search-bar"
             // defaultValue={props.defaultKeyword}
           />
           <input
             type="submit"
             value="Search"
-            className="col-3 Dictionary-search-btn"
+            className="col-sm-3 Dictionary-search-btn"
           />
         </form>
         <Results results={results} />
       </div>
-      <div className="col-sm-6 ">
+      <div className="col-sm-6 Photos-container">
         <Photos photos={photos} />
       </div>
     </div>

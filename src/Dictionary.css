@@ -1,10 +1,19 @@
-.Dictionary {
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
 }
 
-.Dictionary .Dictionary-container {
+.col-sm-6 .Dictionary-container,
+.Photos-container {
+  /* box-sizing: border-box; */
+  padding: 0px;
+  width: 50%;
+}
+
+.Dictionary-container {
   padding-left: 60px;
   min-height: 100vh;
-  /* background-color: #fcdd9c; */
   background: linear-gradient(
     to right bottom,
     #fad4ce,
@@ -23,35 +32,37 @@
   border: 5px solid;
 }
 
-.Dictionary .Dictionary-container h1 {
-  margin-top: 70px;
+.Dictionary-container h1 {
+  margin-top: 60px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   font-size: 35px;
+  font-weight: 500;
 }
 
-.Dictionary .Dictionary-container .Dictionary-form {
-  margin: 30px 0px 0px;
+.Dictionary-container .Dictionary-form {
+  margin: 28px 0px 0px;
 }
 
-.Dictionary .Dictionary-container .Dictionary-form .Dictionary-search-bar {
+.Dictionary-container .Dictionary-form .Dictionary-search-bar {
   background-color: #fff1e8;
   box-shadow: 6px 6px rgba(0, 0, 0, 1);
-  border: 3px solid;
+  border: 3px solid black;
   height: 50px;
 }
 
-.Dictionary .Dictionary-container .Dictionary-form input[type="search"] {
+.Dictionary-container .Dictionary-form input[type="search"] {
   padding-left: 20px;
   color: #757575;
   border: 3px solid black;
   font-size: 18px;
 }
 
-.Dictionary .Dictionary-container .Dictionary-form input::placeholder {
+.Dictionary-container .Dictionary-form input::placeholder {
   text-transform: uppercase;
 }
 
-.Dictionary .Dictionary-container .Dictionary-form .Dictionary-search-btn {
+.Dictionary-container .Dictionary-form .Dictionary-search-btn {
   background-color: #f87850;
   box-shadow: 6px 6px rgba(0, 0, 0, 1);
   border: 3px solid;
@@ -59,4 +70,31 @@
   margin-left: 12px;
   height: 50px;
   text-transform: uppercase;
+  transition: 500ms all ease-in-out;
+}
+
+.Dictionary-container .Dictionary-form .Dictionary-search-btn:hover {
+  background-color: #d2569e;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .row {
+    margin: 0px;
+  }
+
+  .Dictionary-container {
+    min-height: 100%;
+    border-bottom: none;
+  }
+
+  .Dictionary-container .Dictionary-form .Dictionary-search-btn {
+    margin: 20px 0px 0px 10px;
+    width: 75%;
+    height: 40px;
+  }
+
+  .Dictionary-container .Dictionary-form .Dictionary-search-bar {
+    margin-left: 10px;
+  }
 }

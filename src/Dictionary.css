@@ -1,4 +1,8 @@
 .Dictionary {
+}
+
+.Dictionary .Dictionary-container {
+  padding-left: 60px;
   min-height: 100vh;
   /* background-color: #fcdd9c; */
   background: linear-gradient(
@@ -17,10 +21,6 @@
     #bfaaf6
   );
   border: 5px solid;
-}
-
-.Dictionary .Dictionary-container {
-  margin-left: 60px;
 }
 
 .Dictionary .Dictionary-container h1 {
